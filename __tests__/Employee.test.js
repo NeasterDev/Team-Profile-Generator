@@ -1,5 +1,13 @@
 const Employee = require('../lib/Employee');
 
+test("it should create an employee object with default vaclues", () => {
+    const testEmployee = new Employee();
+
+    expect(testEmployee.name).toEqual(expect.any(String));
+    expect(testEmployee.id).toEqual(expect.any(Number));
+    expect(testEmployee.email).toEqual(expect.stringContaining("@"));
+});
+
 test("it should create an employee object who's name is Rick", () => {
     const testEmployee = new Employee("Rick");
 
