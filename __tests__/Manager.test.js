@@ -22,4 +22,10 @@ test('it should create a manager with an office number', () => {
     const testEmployee = new Manager("rick",6, 'manager@man.com', 15);
 
     expect(testEmployee.officeNumber).toEqual(15);
-})
+});
+
+test("it should return with the role type i.e Manager", () => {
+    const testEmployee = new Manager();
+
+    expect(testEmployee.getRole()).toEqual("Manager");
+});

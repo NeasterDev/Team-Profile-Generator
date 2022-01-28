@@ -26,4 +26,10 @@ test("it should create an employee object who's email contains the @ symbol", ()
     expect(testEmployee.email).toEqual(expect.stringContaining("@"));
 });
 
+test("it should return with the role type i.e Employee", () => {
+    const testEmployee = new Employee();
+
+    expect(testEmployee.getRole()).toEqual("Employee");
+});
+
 
