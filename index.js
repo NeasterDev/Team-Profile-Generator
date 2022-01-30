@@ -54,7 +54,7 @@ const createCards = () => {
         if(ans.role === 'Team Manager') {
             html += 
             `<!-- Card Generation Start -->
-            <div class="card card-outer" style="width: 18rem;">
+            <div class="card col-3 m-2" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">${ans.name}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">${ans.role}</h6>
@@ -68,7 +68,7 @@ const createCards = () => {
         } else if (ans.role === 'Engineer') {
             html += 
             `<!-- Card Generation Start -->
-            <div class="card card-outer" style="width: 18rem;">
+            <div class="card col-3 m-2" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">${ans.name}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">${ans.role}</h6>
@@ -82,7 +82,7 @@ const createCards = () => {
         } else if (ans.role === 'Intern') {
             html += 
             `<!-- Card Generation Start -->
-            <div class="card card-outer" style="width: 18rem;">
+            <div class="card col-3 m-2" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">${ans.name}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">${ans.role}</h6>
@@ -189,12 +189,8 @@ const addEmployee = (answers) => {
               </nav>
               <main>
                 <div class="container mt-5">
-                    <div class="main row">
-                        <div class="col justify-center">
-                            <div class="team-manager-card card card-outer" style="width: 18rem;">
-                                ${createCards()}
-                              </div>
-                        </div>
+                    <div class="row">
+                        ${createCards()}
                     </div>
                 </div>
               </main>
