@@ -73,7 +73,7 @@ const createCards = () => {
                 <h5 class="card-title">${ans.name}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">${ans.role}</h6>
                 <p class="card-text">ID: ${ans.ID}</p>
-                <a href="mailto:${ans.email}" class="mEmail card-link">${ans.email}</a><br>
+                <a href="mailto:${ans.email}" class="mEmail card-link">${ans.email}</a></br></br>
                 GitHub: <a href="https://github.com/${ans.github}" class="card-link">${ans.github}</a>
             </div>
         </div>
@@ -199,7 +199,7 @@ const addEmployee = (answers) => {
         </body>
         </html>`;
         fs.writeFile('./dist/index.html', str, () => {});
-        console.log(allAnswers);
+        
     }
 }
 inquirer

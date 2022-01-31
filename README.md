@@ -24,6 +24,9 @@ npm i
 
 node index
 
+For more information on usage refer to this video:
+
+https://watch.screencastify.com/v/Tp7N4rn6GOoBlthlWjL7
 
 ## License
 
